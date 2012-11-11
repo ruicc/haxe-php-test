@@ -15,7 +15,7 @@ class Route
 	@:macro public static function makeRoutingFunction() : Expr
 	{
 		// Controller directoryを走査してクラス全部取得
-		var controllerDir = "/Users/ruichikousuke/Work/haxe/php-test/controller";
+		var controllerDir = "./controller";
 		var files = sys.FileSystem.readDirectory(controllerDir);
 		var classNames = files.map(function(file) { 
 			var r = ~/([a-zA-Z0-9_]+)\.hx/;
